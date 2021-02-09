@@ -1,0 +1,26 @@
+.main-page {
+  height: 40px;
+  background-color: darkgrey;
+  flex-grow: 1;
+}
+
+.header {
+  margin: auto;
+  padding: 5px;
+  display: flex;
+  font-size: 1.3em;
+  justify-content: space-between;
+}
+
+.icon-button {
+  width: 30px;
+  text-align: center;
+  border: #eee solid 1px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: #909090;
+}
+
+.icon-button:hover {
+  background-color: #ccc;
+}

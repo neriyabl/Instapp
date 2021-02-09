@@ -1,0 +1,27 @@
+.contact-list-item {
+  padding: 3px;
+  border: 1px solid #aaa;
+  background-color: #b4ffa1;
+  display: flex;
+  flex-flow: row;
+  cursor: pointer;
+}
+
+.contact-avatar {
+  height: 50px;
+  border-radius: 50%;
+}
+
+.contact-info {
+  display: flex;
+  margin: 0 5px;
+  flex-flow: column;
+}
+
+.contact-title {
+  display: flex;
+}
+
+.contact-mute-icon {
+  margin: auto 5px;
+}

@@ -1,0 +1,7 @@
+.contact-list {
+  max-width: 300px;
+  height: 100vh;
+  background-color: #ccc;
+  display: flex;
+  flex-flow: column;
+}
