@@ -8,13 +8,15 @@ class ContactList extends Component {
     return (
       <div className="contact-list">
         <UserProfile />
-        {this.props.contacts.map((contact) => (
-          <ContactListItem
-            key={contact.id}
-            contact={contact}
-            onClick={() => this.props.onContactSelected(contact.id)}
-          />
-        ))}
+        <div className="contact-list-elment">
+          {this.props.contacts.map((contact) => (
+            <ContactListItem
+              key={contact.id}
+              contact={contact}
+              onClick={() => this.props.onContactSelected(contact.id)}
+            />
+          ))}
+        </div>
       </div>
     );
   }

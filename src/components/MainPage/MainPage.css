@@ -1,10 +1,10 @@
 .main-page {
-  height: 40px;
-  background-color: darkgrey;
   flex-grow: 1;
 }
 
 .header {
+  height: 30px;
+  background-color: #bbb;
   margin: auto;
   padding: 5px;
   display: flex;
@@ -23,4 +23,9 @@
 
 .icon-button:hover {
   background-color: #ccc;
+}
+
+.conversation-page {
+  height: 100vh;
+  background-image: url("https://cdn.pixabay.com/photo/2017/02/18/01/27/background-2076336_1280.jpg");
 }

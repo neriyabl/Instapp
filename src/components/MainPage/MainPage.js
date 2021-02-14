@@ -12,16 +12,22 @@ export default class MainPage extends Component {
     const { name, isMute, id } = this.props.contact || {};
     return (
       <div className="main-page">
-        {name && (
-          <div className="header">
-            <div className="bold">{name}</div>
-            <div onClick={() => this.props.onMute(id)} className="icon-button">
-              <FontAwesomeIcon
-                icon={isMute ? faMicrophoneSlash : faMicrophone}
-              />
-            </div>
-          </div>
-        )}
+        <div className="header">
+          {name && (
+            <>
+              <div className="bold">{name}</div>
+              <div
+                onClick={() => this.props.onMute(id)}
+                className="icon-button"
+              >
+                <FontAwesomeIcon
+                  icon={isMute ? faMicrophoneSlash : faMicrophone}
+                />
+              </div>
+            </>
+          )}
+        </div>
+        <div className="conversation-page"></div>
       </div>
     );
   }
