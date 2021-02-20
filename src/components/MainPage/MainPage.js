@@ -1,6 +1,12 @@
 import React, { Component } from "react";
 import "./MainPage.css";
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faMicrophone,
+  faMicrophoneSlash,
+} from "@fortawesome/free-solid-svg-icons";
+
 export default class MainPage extends Component {
   render() {
     const { name, isMute, id } = this.props.contact || {};
@@ -14,7 +20,9 @@ export default class MainPage extends Component {
                 onClick={() => this.props.onMute(id)}
                 className="icon-button"
               >
-                "font here"
+                <FontAwesomeIcon
+                  icon={isMute ? faMicrophoneSlash : faMicrophone}
+                />
               </div>
             </>
           )}

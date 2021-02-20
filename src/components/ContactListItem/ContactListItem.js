@@ -1,3 +1,8 @@
+import {
+  faMicrophone,
+  faMicrophoneSlash,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Component } from "react";
 import "./ContactListItem.css";
 
@@ -10,7 +15,12 @@ export default class ContactListItem extends Component {
         <div className="contact-info">
           <div className="contact-title">
             <div className="bold">{name}</div>
-            font here
+            <FontAwesomeIcon
+              className="contact-mute-icon"
+              icon={
+                this.props.contact.isMute ? faMicrophoneSlash : faMicrophone
+              }
+            />
           </div>
           <div>
             {lastMessage.length > 27
