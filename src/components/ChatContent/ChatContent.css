@@ -1,0 +1,6 @@
+.chat-content {
+  height: calc(100vh - 70px);
+  display: flex;
+  flex-flow: column;
+  align-items: baseline;
+}
